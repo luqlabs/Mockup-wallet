@@ -22,11 +22,11 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-black flex sm:items-center justify-center text-textMain">
-      <div className="w-full max-w-md bg-bgApp relative overflow-hidden flex flex-col h-[100dvh] sm:h-[92dvh] sm:rounded-[2.5rem] sm:border-[8px] sm:border-[#0f172a] shadow-2xl sm:shadow-[0_0_50px_rgba(99,102,241,0.1)]">
+      <div className="w-full max-w-md bg-bgApp relative overflow-hidden flex flex-col h-dvh sm:h-[92dvh] sm:rounded-[2.5rem] sm:border-8 sm:border-[#0f172a] shadow-2xl sm:shadow-[0_0_50px_rgba(99,102,241,0.1)]">
         
         {/* Main Content Area - hide scrollbar using utility class or inline style */}
         <div 
-          className="flex-1 overflow-y-auto pb-[4.5rem]" 
+          className="flex-1 overflow-y-auto pb-18" 
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           <AnimatePresence mode="wait">
