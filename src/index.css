@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  /* Default: Tema Dark Modern (Indigo/Slate) */
+  --color-primary: 99 102 241; 
+  --color-bg-app: 15 23 42; 
+  --color-surface: 30 41 59; 
+  --color-text: 248 250 252; 
+}
+
+/* CSS Sakti untuk Ilusi Native App */
+body {
+  background-color: rgb(var(--color-bg-app));
+  color: rgb(var(--color-text));
+  margin: 0;
+  
+  /* Mencegah efek bounce / pull-to-refresh */
+  overscroll-behavior-y: none;
+  
+  /* Menghilangkan kotak biru saat tombol ditekan di mobile */
+  -webkit-tap-highlight-color: transparent;
+  
+  /* Mencegah teks tak sengaja ter-blok */
+  user-select: none;
+}
+
+/* Memastikan aplikasi menggunakan tinggi layar HP sebenarnya, bukan tinggi browser dengan bar URL */
+html, body, #root {
+  height: 100%;
+  height: 100dvh;
+}
